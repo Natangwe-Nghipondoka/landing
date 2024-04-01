@@ -1,0 +1,111 @@
+/* Importing component files */
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+
+/* General style rules for fonts and colors */
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0px;
+  background-color: #9bc7ac;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+/* css/style.css */
+
+.cards {
+  display: flex;
+  flex-direction: column; /* Display cards in a column */
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #daede1;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Display card contents in a row */
+}
+
+.card img {
+  width: 150px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.card .content {
+  flex-grow: 1; /* Allow content to grow to fill the remaining space */
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.container {
+  text-align: center; /* Center-align content within the container */
+}
+.banner {
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 50%), url('../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+}
+
+.banner .container {
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.banner h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+
+.banner a.btn-blue {
+  /* Style your primary button here */
+  /* Example styles */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.banner a.btn-blue:hover {
+  background-color: #0056b3;
+}
+.primary-btn {
+  background-color: #007bff; /* Adjust to your primary color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+.container {
+  max-width: 900px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding to the sides */
+}
